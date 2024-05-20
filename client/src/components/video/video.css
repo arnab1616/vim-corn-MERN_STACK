@@ -1,0 +1,267 @@
+.uploadVideo{
+    background-color: #130b6aee;;
+    border: 1px solid grey;
+    /* margin-top: 2rem; */
+    padding: 5px;
+    transition: ease-in 150ms;
+}
+select option{
+    background: rgb(11, 25, 100);
+    font-size: 0.8rem;
+}
+.uploadVideo textarea,p,input{
+    background: transparent;
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 0.8rem;
+    padding-left: 10px;
+    resize: none;
+}
+.uploadVideo:hover{
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.uploadVideo label{
+    color: rgb(172, 172, 172);
+    font-size: 0.85rem;
+}
+.uploadSection{
+    background-color: #130b6aee;;
+    border: 2px dashed grey;
+    margin-top: 2rem;
+    width: 49%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: ease-in 150ms;
+}
+.uploadSection:hover{
+    border: 2px dashed white;
+}
+.uploadSection label{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    color: rgb(211, 211, 211);
+    font-size: 0.85rem;
+}
+.uploadForm form{
+    margin-left: 2rem;
+}
+.progress{
+    position: fixed;
+    height:2px;
+    transform: translate(0,3270%);
+    width: 100%;
+    z-index: 5;
+}
+.video-link{
+    /* margin: 0 12px 10px 12px; */
+    margin-bottom: 10px;
+}
+.video-card{
+    width: min-content;
+    background:none; 
+    border:none;
+    margin: 10px;
+}
+.thumbnail{
+    border-radius: 20px;
+    width: 320px;
+    height: 200px;
+    transition: ease-in 200ms;
+}
+.thumbnail:hover{
+    border-radius: 0;
+}
+.video-component{
+    display: flex;
+    justify-content: space-between;
+}
+.video-container{
+    display: flex;
+}
+.video-container video{
+    border-radius: 15px;
+    /* width: 850px;
+    height:480px; */
+    width: 800px;
+    height:450px;
+    filter: drop-shadow(0 0 2em #555cbfaa);
+}
+.videoTitle{
+    font-size: 1.1rem;
+}
+.video-description{
+    margin-top: 10px;
+    padding: 5px;
+    background: #544a94;
+    border-radius: 10px;
+}
+.video-owner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+}
+.video-handler{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 52%;
+    margin: 1px;
+}
+.video-handler  button{
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    background: rgb(40, 1, 117);
+    color: darkgrey;
+    font-size: 0.85rem;
+    font-weight: bold;
+    border-radius: 20px;
+}
+.video-handler .dropdown{
+    display: flex;
+    justify-content: space-between;
+}
+.subscribe button{
+    background: linear-gradient(300deg, #00bfff, #093cd4, #7222fc);
+    background-size: 180% 180%;
+    color: lightgray;
+    font-weight: bold;
+    margin: 0;
+    /* margin-right: 10px; */
+    border-radius: 50px;
+    border: 1px solid gray;
+}
+.subscribe button:hover{
+    opacity: 0.9;
+    color: lightgray;
+    font-weight: bold;
+}
+.comment-div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    border-bottom: 1px solid lightgray;
+}
+.comment-div button{
+    /* padding: 5px 10px; */
+    font-size: 0.8rem;
+    padding: 1px 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+    
+}
+.comment-div input{
+    width: 70%;
+    font-size: 0.86rem;
+    color: white;
+    outline: none;
+    border: none;
+    background: transparent;
+}
+.recomended-videos{
+    width: 100%;
+}
+.recomended-div{
+    margin-left: 40px;
+}
+.clips-handle{
+    padding: 0 20px;
+   height: fit-content;
+}
+.clips-handle-button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    padding: 0;
+}
+.clips-handle-button button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* background: rgb(4, 28, 107); */
+}
+@media (min-width: 319px) and (max-width: 992px) {
+    .progress{
+        height: 2px;
+        transform: translate(0,3018%);
+    }
+    .uploadVideo textarea,p{
+        /* background: transparent;
+        color: white;
+        outline: none;
+        border: none; */
+        font-size: 0.9rem;
+        padding-left: 10px;
+        resize: none;
+    }
+    .uploadForm{
+        padding: 10px;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .uploadForm form{
+        margin-left: 0;
+    }
+    .video-link{
+        margin-bottom: 10px;
+    }
+    .video-card{
+        width: 100%;
+        margin: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .thumbnail{
+        width: 100%;
+        height: 50%;
+    }
+    .video-container{
+        flex-direction: column;
+    }
+    .video-container video{
+        width:100%;
+        height:50%;
+    }
+    .video-component{
+        /* display: flex; */
+        flex-direction: column;
+    }
+    .video-owner{
+        width: 100%;
+    }
+    .subscribe{
+        transform: translate(-50%,0%);
+    }
+    .video-handler{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .video-handler  button{
+        padding: 6px 9px;
+        font-size: 0.85rem;
+    }
+    .video-handler .dropdown{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .recomended-div{
+        margin-left: 0;
+        
+    }
+    .recomended-videos{
+        width: 100%;
+    }
+}
